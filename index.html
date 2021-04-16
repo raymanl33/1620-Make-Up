@@ -12,16 +12,18 @@
 <body>
     <div class="container">
         <h1>Budget App</h1>
+        <div class="form">
         <form class="budget">
             <label for="BudgetAmount"></label>
             <input type="number" id="CreateBudget" name="BuudgetAmount" placeholder="budget amount"><br><br>
             <button onclick="storebudget()" class="create" type="button">Create Budget</button><br><br>
             <lable for="Expenses"></lable>
-            <input type="number" id="ExpItem" name="Expenses" placeholder="expense item"><br><br>
+            <input type="text" id="ExpItem" name="Expenses" placeholder="expense item"><br><br>
             <input type="number" id="ExpAmount" name="Expenses" placeholder="expense amount"><br><br>
-            <button class="addExpense" type="button">add expense item</button>
+            <button onclick="addExpense()" class="addExpense" type="button">add expense item</button>
 
         </form>
+    </div>
     </div>
 
     
