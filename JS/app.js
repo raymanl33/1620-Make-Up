@@ -1,6 +1,8 @@
+let budget = document.querySelector('#CreateBudget') 
+let array = []
+console.log(array)
 
 function defineBudgetArea() {
-    let budget = document.querySelector('#CreateBudget')
 
     html = `
     <div id="budgetarea"> 
@@ -41,16 +43,19 @@ function storebudget() {
     let form = document.querySelector('.form')
     addEventlistner()
     form.insertAdjacentHTML('afterend', defineBudgetArea())
- 
+    array[0] = budget.value
 
 }
+
+
 
 function calculateExpense() {
+
     let amount = document.querySelector('#ExpAmount')
-    let budget = document.querySelector('#CreateBudget')
     const updateBudget = document.querySelector('p')
-    let total = budget.value - (amount.value)
-    console.log(total)
+    let total = array[0] - (amount.value)
+    array[0] = total
   
-    updateBudget.innerText =  'current remaing budget:' + total;
+    updateBudget.innerText =  'current remaing budget: ' + total;
 }
+
