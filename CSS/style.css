@@ -15,7 +15,7 @@
 
 .budget {
     display: center;
-    transform: translate(100px, 100px);
+    transform: translate(0.5px, 100px);
 }
 
 h1 {
@@ -62,4 +62,56 @@ h1 {
 
 #budgetArea {
     display: right;
+    transform: translate(100px);
+}
+
+ul {
+    list-style: none;
+}
+
+
+@media screen and (max-width:975px) {
+
+    
+.container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+       
+        grid-template-rows: 3ch auto minmax(50%, 60px);
+        grid-template-areas: 
+        's s'
+        's s'
+        'b b';
+        width: 100vw;
+        height: 100vh;
+        align-items:baseline;
+       
+}
+
+
+
+
+#budgetarea {
+    grid-area: b;
+    position: relative;
+   
+
+}
+
+h1 {
+    grid-area: s;
+    grid-column: 1/-5;
+
+}
+
+.form {
+    grid-area: s;
+}
+
+/* .budget {
+    grid-area: s; 
+    grid-column: 2/3;
+
+    
+} */
 }
