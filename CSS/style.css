@@ -75,13 +75,13 @@ ul {
     
 .container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-       
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 25%);
         grid-template-rows: 3ch auto minmax(50%, 60px);
         grid-template-areas: 
-        's s'
-        's s'
-        'b b';
+        'h h h'
+        's s s'
+        'b b b';
         width: 100vw;
         height: 100vh;
         align-items:baseline;
@@ -99,7 +99,7 @@ ul {
 }
 
 h1 {
-    grid-area: s;
+    grid-area: h;
     grid-column: 1/-5;
 
 }
