@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script defer src="JS/app.js"></script>
     <title>Budget</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Budget App</h1>
+        <form class="budget">
+            <label for="BudgetAmount"></label>
+            <input type="number" id="CreateBudget" name="BuudgetAmount" placeholder="budget amount"><br><br>
+            <button onclick="storebudget()" class="create" type="button">Create Budget</button><br><br>
+            <lable for="Expenses"></lable>
+            <input type="number" id="ExpItem" name="Expenses" placeholder="expense item"><br><br>
+            <input type="number" id="ExpAmount" name="Expenses" placeholder="expense amount"><br><br>
+            <button class="addExpense" type="button">add expense item</button>
+
+        </form>
+    </div>
+
     
+    
+
 </body>
 </html>

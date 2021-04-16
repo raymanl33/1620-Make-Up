@@ -1,5 +1,61 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: aliceblue;
+    background-color: #E0FFFF;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 'left center right';
+    width: 100vw;
+    height: 100vh;
+}
+
+.budget {
+    display: center;
+    transform: translate(100px, 100px);
+}
+
+h1 {
+    margin-top: 10px;
+    transform: translate(100%);
+    font-family: 'Nunito', sans-serif;
+}
+
+#CreateBudget {
+    font-size: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: ridge;
+}
+
+
+#ExpItem {
+    font-size: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: ridge;
+}
+
+#ExpAmount {
+    font-size: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: ridge;
+}
+
+.create {
+    color: #DCDCDC;
+    background-color: #0000FF;
+}
+
+
+.addExpense {
+    color: #DCDCDC;
+    background-color: #0000FF;
 }
