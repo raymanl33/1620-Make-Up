@@ -14,7 +14,7 @@
 }
 
 .budget {
-    display: center;
+    grid-area: center;
     transform: translate(0.5px, 100px);
 }
 
@@ -61,7 +61,7 @@ h1 {
 }
 
 #budgetArea {
-    display: right;
+    grid-area: right;
     transform: translate(100px);
 }
 
@@ -76,12 +76,14 @@ ul {
 .container {
         display: grid;
         /* grid-template-columns: 1fr 1fr 1fr; */
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: 3ch auto minmax(50%, 60px);
+        grid-template-columns: minmax(30ch, 50ch);
+        grid-template-rows: 1rem 1fr 1fr;
+        /* grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 3ch auto minmax(50%, 60px); */
         grid-template-areas: 
-        'h h h'
-        's s s'
-        'b b b';
+        ' h h'
+        ' s s'
+        ' b b';
         width: 100vw;
         height: 100vh;
         align-items:baseline;
