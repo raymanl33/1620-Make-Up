@@ -75,8 +75,8 @@ ul {
     
 .container {
         display: grid;
-        /* grid-template-columns: 1fr 1fr 1fr; */
-        grid-template-columns: minmax(30ch, 50ch);
+        /* grid-template-columns: 1fr; */
+        grid-template-columns: minmax(10ch, 20ch);
         grid-template-rows: 1rem 1fr 1fr;
         /* grid-template-columns: repeat(4, 25%);
         grid-template-rows: 3ch auto minmax(50%, 60px); */
@@ -102,12 +102,19 @@ ul {
 
 h1 {
     grid-area: h;
-    grid-column: 1/-5;
-
+    /* grid-column: 1/-10; */
+    transform: translate(0px);
+    /* grid-column: auto; */
+  
+ 
 }
 
 .form {
     grid-area: s;
+    grid-column: auto;
+    
+    /* align-items: center;
+    justify-self: center; */
 }
 
 /* .budget {
